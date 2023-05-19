@@ -14,12 +14,17 @@ export const OnlineDoctorConsultants = () => {
                 <Box ml='30px'>
                     <Heading as='h6' mb='10px' size={'md'} fontWeight='500'>Fast Online Doctor Consultations</Heading>
                         <Text fontSize={'sm'}>No need to wait your turn ! Consult with a doctor right now</Text>
-                        <Text mb='5px' fontSize={'sm'}>More than 25+ specialities to choose from, starting at just ₹199</Text>
+                        
                 </Box>
             </Flex>
             <Flex alignItems={'center'} justifyContent={{base: '', md: 'flex-end'}}>
                 <Box>
-                    <Button h='50px' letterSpacing={'1px'} borderRadius={'3px'} boxShadow= '0 6px 12px 0 rgb(36 174 177 / 40%)'  p='0 20px' bg='#395B64' color='#fff' _hover={{bg:'#395B64'}} fontSize='14px'>Learn More</Button>
+                    <Button
+                     as='a'
+    href='https://www.practo.com/'
+    target='_blank'
+                    
+                     h='50px' letterSpacing={'1px'} borderRadius={'3px'} boxShadow= '0 6px 12px 0 rgb(36 174 177 / 40%)'  p='0 20px' bg='#395B64' color='#fff' _hover={{bg:'#395B64'}} fontSize='14px'>Learn More</Button>
                 </Box>
             </Flex>
         </Grid>

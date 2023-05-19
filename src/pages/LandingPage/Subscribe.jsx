@@ -20,7 +20,12 @@ export const Subscribe = () => {
             </Flex>
             <Flex alignItems={'center'} justifyContent={{base: '', md: 'flex-end'}}>
                 <Box>
-                    <Button h='50px' letterSpacing={'1px'} borderRadius={'3px'} boxShadow= '0 6px 12px 0 rgb(36 174 177 / 40%)'  p='0 20px' bg='#395B64' color='#fff' _hover={{bg:'#395B64'}} fontSize='14px'>Subscribe</Button>
+                    <Button 
+                     as='a'
+    href='https://subscribe-mailchimp-azgw39mz6-bhaskarkumar654321-gmailcom.vercel.app/'  // Replace with your desired external URL
+    target='_blank'  // Opens the link in a new tab/window
+    rel='noopener noreferrer'
+                    h='50px' letterSpacing={'1px'} borderRadius={'3px'} boxShadow= '0 6px 12px 0 rgb(36 174 177 / 40%)'  p='0 20px' bg='#395B64' color='#fff' _hover={{bg:'#395B64'}} fontSize='14px'>Subscribe</Button>
                 </Box>
             </Flex>
         </Grid>

@@ -22,6 +22,7 @@ const TopNavbar = () => {
             <Box paddingRight={"20px"}>
             <Image
                 //src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg"
+                marginRight={450}
                 src="https://i.postimg.cc/qM9y4VJq/logo192.png"
                 alt="MedicalmartLogo"
                 w={"168px"}

@@ -131,8 +131,8 @@ const OTPform = ({ number, toggleMobileAuthenticate }) => {
           }
         </Box>
         <Box mb={"38px"}>
-          <Text fontSize={"13px"} color="#395B64">
-            FIRST NAME
+          <Text fontSize={"13px"} color="#395B64" fontWeight="bold">
+          <h1>  FIRST NAME </h1>
           </Text>
           <Input
             ref={firstName}
@@ -146,13 +146,14 @@ const OTPform = ({ number, toggleMobileAuthenticate }) => {
               color={"red"}
               fontSize="11px"
               hidden={validations.goodFirstName}
+              fontWeight="bold"
             >
               Please enter your First Name
             </Text>
           }
         </Box>
         <Box mb={"38px"}>
-          <Text fontSize={"13px"} color="#395B64">
+          <Text fontSize={"13px"} color="#395B64" fontWeight="bold">
             LAST NAME
           </Text>
           <Input
@@ -173,7 +174,7 @@ const OTPform = ({ number, toggleMobileAuthenticate }) => {
           }
         </Box>
         <Box className="validationBox">
-          <Text fontSize={"12px"} color="rgba(21,27,57,.6)" mb={"10px"}>
+          <Text fontSize={"12px"} color="rgba(21,27,57,.6)" mb={"10px"}  fontWeight="bold">
             VARIFYING NUMBER
           </Text>
           <Flex justifyContent={"space-between"}>

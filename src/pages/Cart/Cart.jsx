@@ -351,9 +351,7 @@ export const Cart = () => {
                                         </Box>
                                     </Flex>
                                 </Box>
-                                <Box mt='-20px' p='15px'>
-                                    <Text as='i' fontSize={'10px'} lineHeight='-10px'>Netmeds is a technology platform to facilitate transaction of business. The products and services are offered for sale by the sellers. The user authorizes the delivery personnel to be his agent for delivery of the goods. For details read <span style={{ color: '#0033ff' }}>Terms & Conditions</span></Text>
-                                </Box>
+                               
                             </Box>
                         </Box>
                     </Box>

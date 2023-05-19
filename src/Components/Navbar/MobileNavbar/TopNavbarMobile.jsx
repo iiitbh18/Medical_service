@@ -7,7 +7,7 @@ const MobileNavbar = () => {
   const cart = useSelector((state) => state.cart);
   return (
     <Box >
-      <Flex
+       <Flex
         position={"fixed"}
         width='100%'
         top="0px"
@@ -17,7 +17,7 @@ const MobileNavbar = () => {
         height="50px"
         alignItems={"center"}
         justifyContent="space-between"
-      >
+      > 
         <Link to='/'><Image
          
           src="https://i.postimg.cc/SQMnsXQj/logo192.png"

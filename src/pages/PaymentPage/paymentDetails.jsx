@@ -7,6 +7,8 @@ import React, { useContext } from "react"
 import {NewCarddetails} from"./newCarddetails"
 import { AppContext } from "../../context/AppContext";
 import { useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Razorpay from './razorpay';
 
 
 export const PymentDetails=()=>{
@@ -153,16 +155,21 @@ const {totalMRP,discount,promoCodeDiscount,getData,cartData,loading}= useContext
 
 
             <Box  padding='10px'mb='60px' id='boxshadow' >
-              <Text color='rgba(21,27,57,.6)' fontSize='12px'  mb='20px'>PREFERED PAYMENT</Text>
-              <Flex justifyContent="space-between" >
-                <Flex align='center'>
-                <Image h='30px' mr='15px'src='https://www.netmeds.com/assets/pgicon/Paytm_lo.png' alt='img'/>
-                <Text  fontSize='14px' >Paytm</Text>
-                </Flex>
-                <Text color='#ef4281' fontSize='12px'>Link</Text>
-              </Flex>
-              <Text ml='40px' color='rgba(21,27,57,.6)' fontSize='12px'>Pay using your Paytm wallet and get cashback between Rs. 30 to Rs. 300. Valid once per user. Minimum order value: Rs. 599.</Text>
-            </Box>
+  <Text color='rgba(21,27,57,.6)' fontSize='12px'  mb='20px'>PREFERRED PAYMENT</Text>
+  <Flex justifyContent="space-between" >
+    
+    <Flex align='center'>
+      <Image h='30px' mr='15px' src='https://tukuz.com/wp-content/uploads/2020/10/razorpay-logo-vector.png' alt='Razorpay'/>
+      <Link to="/component-to-redirect-to">
+  <button>
+    <Text fontSize='14px'>Pay Now</Text>
+  </button>
+</Link>
+    </Flex>
+  </Flex>
+  <Text ml='40px' color='rgba(21,27,57,.6)' fontSize='12px'>Pay using your Paytm or Razorpay wallet and get cashback between Rs. 30 to Rs. 300. Valid once per user. Minimum order value: Rs. 599.</Text>
+</Box>
+
 
 
 
@@ -253,6 +260,31 @@ const {totalMRP,discount,promoCodeDiscount,getData,cartData,loading}= useContext
             <Flex justifyContent="space-between" fontWeight='bold'>
               <Text >Total Amount</Text>
               <Text > *Rs.{(totalMRP-discount).toFixed(2)}</Text>
+              <Box  padding='10px'mb='60px' id='boxshadow' >
+              
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+</Box>
+
             </Flex>
             </Box>
             <Box bg='#F5EDDC' mt='20px' p='10px'>
@@ -266,7 +298,24 @@ const {totalMRP,discount,promoCodeDiscount,getData,cartData,loading}= useContext
                 <Text fontWeight='bold' fontSize='20px'>Rs.{(totalMRP-discount).toFixed(2)}</Text>
               </Box>
 
-              
+
+
+<Box>
+
+
+<a href="https://iiitbh18.github.io/razorpay/"  target="blank">
+<Image h='30px' mr='15px' src='https://tukuz.com/wp-content/uploads/2020/10/razorpay-logo-vector.png' alt='Razorpay'/>
+
+      
+  <button color="blue">
+
+    <Text fontSize='14px'>Pay Now</Text> 
+  </button>
+							</a>
+
+
+</Box>
+            
 
             </Flex>
           </Box>

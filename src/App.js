@@ -1,4 +1,4 @@
-import "./App.css";
+
 import MainNavbar from "./Components/Navbar/MainNavbar";
 import { AllRoutes } from "./Components/AllRoutes/AllRoutes";
 import { useDispatch } from "react-redux";

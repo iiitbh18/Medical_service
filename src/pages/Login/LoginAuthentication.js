@@ -6,10 +6,10 @@ export const SigninAuthentication = async (formEntries) => {
   const sendEmail = () => {
     emailjs
       .send(
-        "service_zun9zaa",
-        "template_o8h6w1m",
+        "service_87nx6lg",
+        "template_v9o4i5k",
         formEntries,
-        "yv8odGIkO8jpyoaqP"
+        "58_WGA3O2rTLA9ZZR"
       )
       .then(
         (response) => {

@@ -56,7 +56,7 @@ const Footer = () => {
         
         
         <Text fontSize="14px" as={'button'}>Copyright &#169; All Rights Reserved by Aradhna , Bhaskar</Text>
-        <Text>This website solemny made for educational purposes, Content for blogs has been taken from different websites</Text>
+        <Text>This website solemnly made for educational purposes, Content for blogs has been taken from different websites</Text>
         
       </Flex>
     </Box>

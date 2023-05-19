@@ -47,14 +47,15 @@ const Signin = () => {
         mb='20px'
       >
         <Flex justifyContent="flex-end">
-          <Box>
+          <Box> 
             <Image
               
               width="100%"
               ml={"600px"}
               maxW={"488px"}
              // src="https://static.vecteezy.com/system/resources/thumbnails/001/060/223/small/rocket-is-flying-in-galaxy-space-of-the-universe.jpg"
-              src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png"
+              //src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png"
+             // src="https://img.freepik.com/free-photo/sign-up-register-online-internet-web-concept_53876-133557.jpg"
             />
           </Box>
           <Box maxW={"468px"}>

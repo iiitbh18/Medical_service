@@ -12,7 +12,7 @@ const BottomNavBarMobile = () => {
   const ref = useRef(null);
   const { handlecurrProduct } = useContext(Data)
 
-  const name = "Nidhish";
+  const name = "Random";
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -70,13 +70,13 @@ const BottomNavBarMobile = () => {
         </Button>
       </Flex>
       <Box pos='relative'>
-        <InputGroup height={'38px'} flex='center' mb='10px'>
+        {/* <InputGroup height={'38px'} flex='center' mb='10px'>
           <Input fontSize={'14px'} height='38px' placeholder="Search your products..." onChange={(e) => handleChange(e)}
             value={input} />
           <InputRightElement mt={'-5px'} children={<FiSearch size={'23px'} color="grey" />} />
-        </InputGroup>
+        </InputGroup> */}
         {input.length > 0 && <Box pos='absolute' zIndex={'4'} className="webkit" borderTop={'1px solid #ddde0'} ref={ref} borderRadius={'6px'} display='none' bg='#fff' w='100%' maxH='70vh' overflow={'auto'}>
-          <Box w='100%'>
+          {/* <Box w='100%'>
             {
               searchData.map(el => (
                 <Box borderBottom='1px solid #dddde0' onClick={() => showProduct(el)} cursor={'pointer'} key={el.id} display='flex' mb='10px'>
@@ -94,7 +94,7 @@ const BottomNavBarMobile = () => {
                 </Box>
               ))
             }
-          </Box>
+          </Box> */}
         </Box>}
       </Box>
     </Box>

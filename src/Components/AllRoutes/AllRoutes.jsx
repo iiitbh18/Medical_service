@@ -3,13 +3,22 @@ import { Route, Routes } from "react-router-dom";
 import { Cart } from "../../pages/Cart/Cart";
 import { Landing } from "../../pages/landing";
 import Footer from "../Footer/Footer";
-import LoginPage from "../../pages/Login/LoginPage";
+import Profile from "../../pages/Login/Profile";
+import  LoginPage from "../../pages/Login/LoginPage";
+import  SignIn from "../../pages/Login/SignIn";
+import  SignUp from "../../pages/Login/SignUp";
+
 import { OrderReview } from "../../pages/PaymentPage/orderReview";
 import { PymentDetails } from "../../pages/PaymentPage/paymentDetails";
+import Razorpay from "../../pages/PaymentPage/razorpay";
+
+
+
+
 import ProductDetail from "../../pages/ProductDetailPage/ProductDetail";
 import Products from "../../pages/ProductPage/Products";
 import { useSelector } from "react-redux";
-import { PrivateRoute } from "../../context/PrivateRoute";
+import  { PrivateRoute }  from "../../context/PrivateRoute";
 import ErrorPage from "../../pages/ErrorPage";
 import HealthConcern from "../../pages/LandingPage/HealthConcern";
 
@@ -45,6 +54,20 @@ export const AllRoutes = () => {
           </>
         }
       ></Route>
+
+<Route path="/sign-in" element={<SignIn />} />
+         <Route path="/sign-up" element={<SignUp />} />
+         
+            <Route path="/profile" element={<Profile />} />
+
+
+
+
+
+
+
+
+      
       <Route
         path="/products"
         element={
@@ -68,7 +91,8 @@ export const AllRoutes = () => {
         element={
           <PrivateRoute>
             <OrderReview></OrderReview>
-          </PrivateRoute>
+            </PrivateRoute>
+         
         }
       ></Route>
       <Route
@@ -79,6 +103,14 @@ export const AllRoutes = () => {
           </PrivateRoute>
         }
       ></Route>
+       <Route
+        path="/payment/details/razorpay"
+        element={
+          <PrivateRoute>
+            <Razorpay></Razorpay>
+          </PrivateRoute>
+        }
+      ></Route> 
      
      <Route
         path="/"
